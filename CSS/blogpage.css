@@ -1,0 +1,145 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+.blog-container {
+  
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    grid-gap: 3em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "hd"
+    "cont"
+    "ft";
+    background: yellow;
+
+ }
+
+.blog-header {
+    grid-column: 1 / -1;
+    display: flex;
+    background: gray;
+    grid-area: hd;
+    align-items: flex-end;
+    font-size: 1.1em;
+}
+
+.blog-header > div:nth-child(3) {
+    margin-left: auto;
+    
+  }
+ 
+.blog-header > div:nth-child(2) {
+    margin-left: 13em;
+    font-size: 3em;
+    flex-direction: row;
+  }
+
+.sub-button {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: aqua;
+  background-image: linear-gradient(to top left,
+  rgba(0, 0, 0, .2),
+  rgba(0, 0, 0, .2) 30%,
+  rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+  inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.sub-button:hover {
+  background-color: white;
+}
+
+.blog-cont {
+    display:grid;
+    grid-template-columns: minmax(60ch, 150ch) 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "col1 col2";
+    background: gray;
+    grid-area: cont;
+}
+
+.b-text {
+  display:flex;
+  background: white;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-area: col1;
+}
+
+
+
+
+.r-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background: white;
+    grid-area: col2;
+}
+
+
+.about-box {
+    
+    display: flex;
+    flex-direction: column;
+    width: 380px;   
+    height: 200px;
+    background: white;
+    align-items: center;
+ 
+}
+
+.bio {
+  margin: 0;
+  padding: .3rem;
+  background-color: rgb(161, 160, 160);
+  font: 1rem 'Fira Sans', sans-serif, Helvetica;
+}
+
+
+  
+.blog-footer {
+    grid-row: 4 / -1;
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    grid-area: ft;
+}
+
+.side-links {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 3em;
+
+}
+.side-links > a {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: blue;
+  font-weight: 700;
+  
+}
+
+.underline {
+  text-decoration: underline;
+}
+
