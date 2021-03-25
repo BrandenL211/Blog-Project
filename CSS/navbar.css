@@ -3,11 +3,11 @@
     background-color: #41D3BD;
     display: inline-block;
     width: 77%;
+    grid-area: n;
   }
   
   .top-nav a {
     float: left;
-    display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -34,10 +34,11 @@
     font-size: 17px;
   }
 
-  @media screen and (max-width: 880px) {
-    .top-nav a, .top-nav input[type=text] {
+  @media screen and (max-width: 768px) {
+    .top-nav, .top-nav a, .top-nav input[type=text] {
       float: none;
-      display: block;
+      display: flex;
+      flex-direction: column;
       text-align: left;
       width: 100%;
       margin: 0;
@@ -47,9 +48,9 @@
        border: 1px solid #ccc;
      }
   }
-
+/*
   @media (min-width: 881px) {
    .top-nav{
        width: auto;
    }   
-  }
+  }*/
