@@ -2,7 +2,7 @@
     overflow: hidden;
     background-color: #41D3BD;
     display: inline-block;
-    width: 77%;
+    width: 100%;
     grid-area: n;
   }
   
@@ -35,6 +35,10 @@
   }
 
   @media screen and (max-width: 768px) {
+    .top-nav{
+      overflow: visible;
+    }
+
     .top-nav, .top-nav a, .top-nav input[type=text] {
       float: none;
       display: flex;

@@ -28,9 +28,13 @@
   background: #41D3BD; 
   color: black;
   display: flex;
-  font-size: 70px;
+  font-size: 50px;
   padding: 3px;
   flex-wrap: wrap;
+}
+
+.h-title {
+  font-size: 70px;
 }
 /*
 .header > div:nth-child(2) {
