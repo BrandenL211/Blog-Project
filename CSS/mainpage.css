@@ -1,5 +1,6 @@
 @import "./blogpage.css";
 @import "./navbar.css";
+@import "./fonts.css";
 
 *{
   box-sizing: border-box;
@@ -130,19 +131,5 @@ button {
     display: flex;
     flex-direction: column;
   }
-
-  /*  grid-template-columns: 880px;
-    grid-template-rows: auto;
-    grid-area:
-    "h"
-    "m"
-    "c"
-    "f";
-  }
-  
-  .container, .main-content {
-    display: flex;
-    flex-direction: column;
-  }*/
 
 }
