@@ -13,7 +13,6 @@
   width: 100vw;
   height: 100vh;
   display:grid;
-  /*grid-gap: 3px;*/
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 100px 50px auto 100px;
   grid-template-areas: 
@@ -37,23 +36,15 @@
 .h-title {
   font-size: 70px;
 }
-/*
-.header > div:nth-child(2) {
-  margin-left: auto;
-}*/
+
 
 .main-content { 
   grid-area: c;
-  background: #DE6449;
+  background: white;    
   display: flex;
-/*  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;*/
-  padding: 10px;
-/*  grid-gap: 10px;
+  justify-content: center;
   align-items: center;
-  justify-items: center;*/
   flex-wrap: wrap;
-
 }
 
 img {
@@ -69,9 +60,8 @@ img {
   border: 2px solid black;
   justify-content: center;
   align-items: center;
-  margin: 3em 3em 0 3em;
+  margin: 3em 3em 3em 3em;
   flex-wrap: wrap;
-  
 }
 
 .main-content .main-container h1 {
